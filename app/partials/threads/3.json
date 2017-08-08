@@ -1,0 +1,22 @@
+{
+  "id": 3,
+  "messages": [{
+    "id": 6,
+    "from": {
+      "first_name": "Beatrix",
+      "last_name": "Kiddo",
+      "email": "blackmamba@gmail.com",
+      "avatar": "uma.jpg"
+    },
+    "to": [{
+      "first_name": "Shmuel",
+      "last_Name": "Lotman",
+      "email": "shmuel.lotman@gmail.com"
+    }],
+    "unread": true,
+    "subject": "My fox force five joke",
+    "snippet": "Vincent, You still wanna hear it?",
+    "body": "<p>Vincent,<br><br>You still wanna hear it?</p>",
+    "created_at": 1409366556530
+  }]
+}

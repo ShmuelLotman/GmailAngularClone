@@ -1,0 +1,15 @@
+<ul class="sentThreadz" id="sentThreads" ng-controller="SentController">
+<li ng-repeat="msg in sentMsgsArr" ng-class="{unread: msg.unread, selected: msg.selected, starred: msg.starred}"ng-model="msg">
+    <a href>
+        <span class="check" ng-click="msg.selected = !msg.selected"></span>
+        <span class="star" ng-click="msg.starred = !msg.starred">✩</span>
+        <span class="people">
+            <span class="name ng-binding ng-scope" ng-model="msg.to" ng-class="{unread: msg.unread, selected: msg.selected}">To: {{msg.to.substring(0,20)}}</span>
+        </span>
+        <span class="subject ng-binding" ng-model="msg.subject">{{msg.subject}} - </span>
+        <span class="body ng-binding">{{msg.body}}</span>
+        <time class="ng-binding" ng-model="msg.created_at">{{msg.created_at | smartDate}}</time>
+    </a>
+
+</li>
+</ul>

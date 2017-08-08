@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "email": "shmuel.lotman@gmail.com",
+    "first_name": "Shmuel",
+    "last_name": "Lotman",
+    "avatar": "me.jpg"
+  },
+  {
+    "id": 2,
+    "email": "shmelke92@gmail.com",
+    "first_name": "Shmuel",
+    "last_name": "Lotman",
+    "avatar": "me.jpg"
+  },
+  {
+    "id": 3,
+    "email": "shmuel.lotman@gmail.com",
+    "first_name": "Shmuel",
+    "last_name": "Lotman",
+    "avatar": "me.jpg"
+  }
+]
