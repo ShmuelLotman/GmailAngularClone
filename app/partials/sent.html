@@ -1,8 +1,8 @@
 <ul class="sentThreadz" id="sentThreads" ng-controller="SentController">
-<li ng-repeat="msg in sentMsgsArr" ng-class="{unread: msg.unread, selected: msg.selected, starred: msg.starred}"ng-model="msg">
+<li ng-repeat="msg in sentMsgsArr" ng-class="{unread: msg.unread, selected: msg.selected}"ng-model="msg">
     <a href>
         <span class="check" ng-click="msg.selected = !msg.selected"></span>
-        <span class="star" ng-click="msg.starred = !msg.starred">✩</span>
+        <span class="star" ng-class="{fullStar: msg.starred}" ng-click= "msg.starred = !msg.starred; changeStar(msg)" stop-event>✩</span>
         <span class="people">
             <span class="name ng-binding ng-scope" ng-model="msg.to" ng-class="{unread: msg.unread, selected: msg.selected}">To: {{msg.to.substring(0,20)}}</span>
         </span>

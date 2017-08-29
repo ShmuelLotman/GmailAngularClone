@@ -2,6 +2,7 @@
   window.app = angular.module('nGmail', ['ngRoute', 'ngSanitize', 'ngResource']);
     app.run(function($rootScope, $location) {
         $rootScope.current_user = window.currentUser;
+        $rootScope.starredMessages = [];
         $rootScope.isRouteActive = function() {
             for(var i=0; i<arguments.length; i++) {
                 var arg=arguments[i];

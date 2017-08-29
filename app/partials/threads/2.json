@@ -14,6 +14,7 @@
       "email": "shmuel.lotman@gmail.com"
     }],
     "unread": false,
+    "starred": false,
     "subject": "Kiddo",
     "snippet": "I don't dodge guilt and I don't Jew out of paying my comeuppance.",
     "body": "<p>I don't dodge guilt and I don't Jew out of paying my comeuppance.</p>",
@@ -32,6 +33,7 @@
       "email": "budlight@gmail.com"
     }],
     "unread": false,
+    "starred": false,
     "subject": "RE: Kiddo",
     "snippet": "Can't we just... forget the past?",
     "body": "<p>Can't we just... forget the past?</p>",
@@ -50,6 +52,7 @@
       "email": "shmuel.lotman@gmail.com"
     }],
     "unread": true,
+    "starred": false,
     "subject": "RE: Kiddo",
     "snippet": "That woman, deserves her revenge and... We deserve to die. But then again, so does she. So, I guess we'll just see. Won't we?",
     "body": "<p>That woman, deserves her revenge and...<br><br>We deserve to die. But then again, so does she.<br><br>So, I guess we'll just see. Won't we?</p>",
