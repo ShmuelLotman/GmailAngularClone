@@ -1,0 +1,7 @@
+<ul id="starredThreads">
+    <li ng-repeat="starredMsg in starredMessages" ng-class="{unread: starredMsg.unread, selected: starredMsg.selected}">
+        <span class="subject ng-binding" ng-model="starredMsg.subject">{{starredMsg.last_message.subject}}</span>
+        <span class="body ng-binding">{{starredMsg.last_message.snippet}}</span>
+        <time class="ng-binding" ng-model="msg.created_at">{{starredMsg.created_at | smartDate}}</time>
+    </li>
+</ul>

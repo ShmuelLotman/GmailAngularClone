@@ -10,13 +10,22 @@
           count: threads.length
       }
    var selected = false;
+         $scope.changeStar = function(thread) {
+         if(!$rootScope.starredMessages.includes(thread)) {
+             $rootScope.starredMessages.unshift(thread);
+         } else {
+             $rootScope.starredMessages = $rootScope.starredMessages.filter(function(item) {
+                 return thread != item;
+             })
+             console.log($rootScope.starredMessages)
+         }
+         }
    $scope.selectAll = function() {
        if($location.path() == '/sent') {
            selectAllMessages($rootScope.allSentThreads)
        } else {
            selectAllMessages($scope.threads)
        }
-       
    };
    $scope.selectNone = function() {
        for(var i = 0; i < $scope.threads.length; i++) {
@@ -207,6 +216,7 @@
      $scope.flash = Flash;
  })
  app.controller('SentController', function($rootScope, $scope, sentMessagesService) {
+     console.log($rootScope.starredMessages)
      $scope.sentMsgsArr = sentMessagesService.getMessages();
      if($scope.sentMsgsArr.length > 0 && $scope.sentMsgsArr[0].created_at == null) {
          $scope.sentMsgsArr[0].created_at = new Date().getTime().toString()
@@ -215,4 +225,7 @@
      $scope.selectAll = function() {selectAllMessages($scope.sentMsgsArr)};
      
  })
+app.controller('StarredController', function($rootScope, $scope) {
+    
+})
 }).call(this);

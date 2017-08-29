@@ -14,6 +14,7 @@
       "email": "shmuel.lotman@gmail.com"
     }],
     "unread": false,
+    "starred": false,
     "subject": "Bill",
     "snippet": "I have vermin to kill.",
     "body": "<p>I have vermin to kill.</p>",
@@ -32,6 +33,7 @@
       "email": "blackmamba@gmail.com"
     }],
     "unread": false,
+    "starred": false,
     "subject": "RE: Bill",
     "snippet": "You must have big rats if you need Hattori Hanzo's steel.",
     "body": "<p>You must have big rats if you need Hattori Hanzo's steel.</p>",

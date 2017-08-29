@@ -8,7 +8,8 @@
         "first_name": "Beatrix",
         "last_name": "Kiddo",
         "email": "blackmamba@gmail.com",
-        "unread": true
+        "unread": true,
+        "starred": false
       }
     ],
     "last_message": {
@@ -26,7 +27,8 @@
         "first_name": "Budd",
         "last_name": "",
         "email": "blackmamba@gmail.com",
-        "unread": true
+        "unread": true,
+        "starred": false
       },
       {
         "first_name": "Shmuel",
@@ -44,6 +46,7 @@
     "id": 1,
     "message_count": 2,
     "unread": true,
+    "starred": false,
     "participants": [
       {
         "first_name": "Beatrix",

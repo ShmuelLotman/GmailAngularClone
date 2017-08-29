@@ -3,6 +3,7 @@
           <a href="#/threads/{{thread.id}}">
             <time>{{ thread.last_message.created_at | smartDate}}</time>
             <span class="check" ng-click="thread.selected = !thread.selected" stop-event></span>
+            <span class="star" ng-class="{'fullStar': thread.starred}"ng-click= "thread.starred = !thread.starred; changeStar(thread)" stop-event>✩</span>
             <span class="people">
               <span class="name" ng-repeat="person in thread.participants" ng-class="{unread: person.unread}">{{ person | smartName : thread.message_count == 1 }} </span>
               <span ng-show="thread.message_count > 1">({{ thread.message_count }})</span>
